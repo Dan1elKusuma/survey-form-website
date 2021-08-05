@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Fill the form to complete the survey</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="label-space">
+                <label id="name-label" class="label-space" for="name">
+                    <h3>Name</h3>
+                    <input id="name" class="input-text" type="text" placeholder="Enter Your Name" required>
+                </label>
+            </div>
+
+            <div class="label-space">
+                <label id="email-label" for="email">
+                    <h3>Email</h3>
+                    <input id="email" class="input-text" type="email" placeholder="Enter Your Email" required>
+                </label>
+            </div>
+
+            <div class="label-space">
+                <label id="number-label" for="number">
+                    <h3>Student ID</h3>
+                    <input id="number" class="input-text" type="number" placeholder="Student ID" required min="100000"
+                        max="3000000">
+                </label>
+            </div>
+
+
+            <div class="label-space">
+                <label for="dropdown">
+                    <h3>Website Developer Roles</h3>
+                    <select id="dropdown" class="input-text">
+                        <option value="full-stack-developer">Full Stack Developer</option>
+                        <option value="front-end-developer">Front End Developer</option>
+                        <option value="back-end-developer">Back End Developer</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="label-space">
+                <label>
+                    <h3>What do you think about this website?</h3>
+                    <label><input type="radio" name="website-rating" value="rating-perfect" checked>Perfect</label><br>
+                    <label><input type="radio" name="website-rating" value="rating-good">Good</label><br>
+                    <label><input type="radio" name="website-rating" value="rating-neutral">Neutral</label><br>
+                    <label><input type="radio" name="website-rating" value="rating-bad">Bad</label><br>
+                    <label><input type="radio" name="website-rating" value="rating-soBad">So Bad</label><br>
+                </label>
+            </div>
+
+            <div class="label-space">
+                <label>
+                    <h3>What should i make next?</h3>
+                    <label><input type="checkbox" value="tribute">Tribute Page</label><br>
+                    <label><input type="checkbox" value="survey-form">Survey Form</label><br>
+                    <label><input type="checkbox" value="product-landing-page">Product Landing Page</label><br>
+                </label>
+            </div>
+
+            <div class="label-space">
+                <label for="text-area">
+                    <h3>Comments</h3>
+                    <textarea id="text-area" cols="30" rows="10" placeholder="Text Here"></textarea>
+                </label><br>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
